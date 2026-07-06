@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Esther</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+<source src="audio/with-you.mp3" type="audio/mpeg">
+</audio>
+
+<div id="passwordScreen" class="screen">
+<div class="glass login-box">
+<h1>For Essie</h1>
+<p>Before entering...</p>
+<h3>What football team does Mike support?</h3>
+<input type="text" id="passwordInput" placeholder="Your answer">
+<button id="unlockBtn">Unlock</button>
+<p id="error"></p>
+</div>
+</div>
+
+<div id="mainSite" style="display: none;">
+
+<section class="hero">
+<div class="hero-content">
+<h1>Happy Birthday</h1>
+<h2>Esther</h2>
+<p>To the girl who completely changed my world.</p>
+<button id="startJourney">
+Begin Journey
+<span id="daysCounter" style="display: block; font-size: 0.85rem; margin-top: 5px; opacity: 0.9;"></span>
+</button>
+</div>
+</section>
+
+<section id="story">
+<h2>Our Story</h2>
+<div class="story-card">
+<h3>How We Met</h3>
+<p>We met randomly on a bus ride, where Esther completely saved me from getting lost on my way to town from campus.</p>
+</div>
+<div class="story-card">
+<h3>First Date</h3>
+<p>Meeting by the library after classes ended at 12:00 PM on a Monday. She had to guide me because I had never been there before. Going on my first Campus movie night with you, even if it was a quick one its still a momemt to remember.</p>
+</div>
+<div class="story-card">
+<h3>Most Special Memory</h3>
+<p>We seriously have a habit of running into each other in the absolute weirdest, most unexpected places! Take the school elections, for instance - we randomly crossed paths at the manifesto night during all that crazy chaos, and you were genuinely the last person i expected to see there. Then there was the time we marched all the way from UNZA to the State House, seeing you there too, completely caching me by surprise once again.</p>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Beautiful Memories</h2>
+<div class="gallery-grid">
+<img src="images/photo1.jpg" alt="Memory 1">
+<img src="images/photo2.jpg" alt="Memory 2">
+<img src="images/photo3.jpg" alt="Memory 3">
+<img src="images/photo4.jpg" alt="Memory 4">
+<img src="images/photo5.jpg" alt="Memory 5">
+<img src="images/photo6.jpg" alt="Memory 6">
+<img src="images/photo7.jpg" alt="Memory 7">
+<img src="images/photo8.jpg" alt="Memory 8">
+<img src="images/photo9.jpg" alt="Memory 9">
+</div>
+</section>
+
+<section id="reasons">
+<h2>10 Reasons I Love You</h2>
+<div class="reason-grid">
+<div class="reason">Your smile</div>
+<div class="reason">Your laugh</div>
+<div class="reason">Your kind heart</div>
+<div class="reason">Your support</div>
+<div class="reason">Your eyes</div>
+<div class="reason">Your energy</div>
+<div class="reason">Your strength</div>
+<div class="reason">Your resilience</div>
+<div class="reason">Simply being you</div>
+<div class="reason">Your movie taste</div>
+<div class="reason" style="grid-column: 1 / -1;">I'll stop here though, I can go on and on and on</div>
+</div>
+</section>
+
+<section id="future">
+<h2>Future Dreams</h2>
+<div class="dream-card">We might not have a future yet but we'll definately think of that letter.</div>
+<div class="dream-card">Going on holiday adventures together now that you have your driver's license, thats if you managed to get it since you've always talked about it</div>
+<div class="dream-card">Legendary couch binge sessions with unlimited snacks and building the official ranking system for every movie we watch.</div>
+</section>
+
+<section id="letter">
+<h2>A Letter For Essie </h2>
+<div class="letter-box">
+<div class="letter-paragraph">My Dearest Essie💕,</div>
+<div class="letter-paragraph">Happy Birthday.</div>
+<div class="letter-paragraph">I honestly don't think words can fully explain how much you mean to me.</div>
+<div class="letter-paragraph">From that random bus ride where you saved me from getting lost, to every laugh, every conversation, and every moment we've shared since then, you've made life brighter.</div>
+<div class="letter-paragraph">One of my favorite things about you is your strength.</div>
+<div class="letter-paragraph">No matter what challenges come your way, you always find a reason to smile.</div>
+<div class="letter-paragraph">I admire that more than you know.</div>
+<div class="letter-paragraph">Thank you for always making time for me, even when your days are busy and exhausting.</div>
+<div class="letter-paragraph">That means more than you could ever imagine.</div>
+<div class="letter-paragraph">I love your smile.</div>
+<div class="letter-paragraph">I love your laugh.</div>
+<div class="letter-paragraph">I love your heart.</div>
+<div class="letter-paragraph">I love your resilience.</div>
+<div class="letter-paragraph">I love your movie reviews.</div>
+<div class="letter-paragraph">I love your blanket burrito updates.</div>
+<div class="letter-paragraph">Most of all...</div>
+<div class="letter-paragraph big-love">I Love You 💖 </div>
+<div class="letter-paragraph">Today is your day.</div>
+<div class="letter-paragraph">Smile. Laugh. Celebrate.</div>
+<div class="letter-paragraph">And remember that somewhere out there is a guy who feels incredibly lucky that you are part of his life.</div>
+<div class="letter-paragraph">Happy Birthday Essie 💝</div>
+<div class="letter-paragraph signature">Love,<br>Mike💝 </div>
+</div>
+</section>
+
+<section id="finale">
+<h2>One Last Surprise</h2>
+<button id="giftButton">Open Gift</button>
+<div id="finalMessage">
+<h1>Happy Birthday Esther💕</h1>
+<p>
+To the girl who holds my heart, Happy Birthday.<br><br>
+If I could give you one gift in this world, it would be the ability to see yourself through my eyes. Only then would you truly understand how incredibly beautiful, rare and deeply loved you are.<br><br>
+You are my favorite chapter, my best friend, and my greatest blessing. No matter where life takes us, my heart will always choose you.<br><br>
+I love you to the moon and back.<br><br>
+Have the happiest day, my beautiful Essie.
+</p>
+</div>
+</section>
+
+</div>
+
+<div id="lightbox">
+<span id="closeLightbox">✕</span>
+<img id="lightboxImage" src="" alt="Lightbox View">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
